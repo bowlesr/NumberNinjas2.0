@@ -11,6 +11,26 @@ namespace NumberNinjas2._0
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //Response.Redirect("Default.aspx");
+        }
+
+        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("Add.aspx");
+        }
+
+        protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
+        {
+
+        }
+
+        protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
+        {
+
+        }
+
+        protected void ImageButton4_Click(object sender, ImageClickEventArgs e)
+        {
 
         }
     }

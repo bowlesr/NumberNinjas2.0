@@ -11,20 +11,58 @@ namespace NumberNinjas2._0
 {
     public partial class Add : System.Web.UI.Page
     {
-        RandomNumberGenerator RNG = new RandomNumberGenerator();
+        //RandomNumberGenerator RNG = new RandomNumberGenerator();
         private int num1;
         private int num2;
-        private string strAns;
-        private int ans;
-        
+        private string strAns ="0" ;
+        private int ans = 0;
+
 
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Problem1();
-            num1 = number1();
+
+            /*if (!this.IsPostBack)
+            {
+
+                number1();
+                Label1.Text = num1.ToString();
+                number2();
+                while (num1 == num2)
+                {
+                    num2 = number2();
+                    Label2.Text = num2.ToString();
+                }
+
+                strAns = Request["Text1"];
+                Label3.Text = strAns;
+
+            }*/
+
+            number1();
             Label1.Text = num1.ToString();
-            num2 = number2();
+            number2();
+            while (num1 == num2)
+            {
+                num2 = number2();
+                Label2.Text = num2.ToString();
+            }            
+            Label1.Text = num1.ToString();
+            Label2.Text = num2.ToString();
+
+
+            strAns = Request["Text1"];
+            Label3.Text = strAns;
+
+            //Response.RedirectToRoute("Default.aspx");
+        }
+
+        public void problem()
+        {
+          
+            number1();
+            Label1.Text = num1.ToString();
+            number2();
             while (num1 == num2)
             {
                 num2 = number2();
@@ -33,9 +71,7 @@ namespace NumberNinjas2._0
 
             strAns = Request["Text1"];
             Label3.Text = strAns;
-
-            //Response.RedirectToRoute("Default.aspx");
-        }       
+        }
 
         public int number1()
         {
@@ -60,7 +96,7 @@ namespace NumberNinjas2._0
                 Label4.Text = "Correct";
             }
             else
-                Label4.Text = "Wrong";
+                Label4.Text = checkAns.ToString();
 
         }
 
@@ -71,9 +107,16 @@ namespace NumberNinjas2._0
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            Button2.Attributes.Add("onclick", "return false;");
+            //Button2.Attributes.Add("onclick", "return false;");            
             CheckAnswer();
-            
         }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            //Button3.Attributes.Add("onclick", "return false;");
+            problem();
+        }
+
+       
     }
 }

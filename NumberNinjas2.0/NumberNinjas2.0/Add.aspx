@@ -23,18 +23,35 @@
         </p>
     <p>
 
-        <input id="Text1" type="text" runat="server" value="" />        <input id="Submit1" type="submit" value="submit" />     <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
-        <asp:Button ID="Button2" type ="button" runat="server" OnClick="Button2_Click" Text="Check Answer"  />
-        <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
+        <input id="Text1" type="text" runat="server" value="" />
+        
+        <input id="Submit1" type="submit" value="submit" />     
+        
+        <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+        
+        <asp:Button ID="Button3" runat="server" Text="Next problem" OnClick="Button3_Click" />
+        
+        
+        
         </p>
 
-    <p></p>
+     <p>
+
+         </p>
+           
     <p>
+         <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Check Answer"  />
+                <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
+        </p>
+   
+    <p>
+
+        </p>
         
     <p></p>
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Back to Home" />
+        <asp:Button ID="Button1" value="add" runat="server" OnClick="Button1_Click" Text="Back to Home" />
     <p></p>
     <p></p>
     </form>
-    </body>
+    </body>  
 </html>

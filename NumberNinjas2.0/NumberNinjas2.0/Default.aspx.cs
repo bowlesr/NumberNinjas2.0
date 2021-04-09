@@ -26,7 +26,7 @@ namespace NumberNinjas2._0
 
         protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
         {
-
+            Response.Redirect("Multiplication.aspx");
         }
 
         protected void ImageButton4_Click(object sender, ImageClickEventArgs e)

@@ -21,10 +21,8 @@ namespace NumberNinjas2._0
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            /*if (!this.IsPostBack)
+            if (!IsPostBack)
             {
-
                 number1();
                 Label1.Text = num1.ToString();
                 number2();
@@ -34,27 +32,15 @@ namespace NumberNinjas2._0
                     Label2.Text = num2.ToString();
                 }
 
-                strAns = Request["Text1"];
-                Label3.Text = strAns;
-
-            }*/
-
-            number1();
-            Label1.Text = num1.ToString();
-            number2();
-            while (num1 == num2)
-            {
-                num2 = number2();
+                Label1.Text = num1.ToString();
                 Label2.Text = num2.ToString();
-            }            
-            Label1.Text = num1.ToString();
-            Label2.Text = num2.ToString();
+                
+            }
 
-
+            Label4.Text = "+______";
             strAns = Request["Text1"];
             Label3.Text = strAns;
-
-            //Response.RedirectToRoute("Default.aspx");
+    
         }
 
         public void problem()
@@ -89,15 +75,17 @@ namespace NumberNinjas2._0
 
         public void CheckAnswer()
         {
-            ans = Int32.Parse(strAns);
-            var checkAns = num1 + num2;
-            if (ans == checkAns)
+            while (Label3 != null)
             {
-                Label4.Text = "Correct";
+                ans = Int32.Parse(strAns);
+                var checkAns = num1 + num2;
+                if (ans == checkAns)
+                {
+                    Label5.Text = "Correct";
+                }
+                else
+                    Label5.Text = checkAns.ToString();
             }
-            else
-                Label4.Text = checkAns.ToString();
-
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -116,7 +104,5 @@ namespace NumberNinjas2._0
             //Button3.Attributes.Add("onclick", "return false;");
             problem();
         }
-
-       
     }
 }

@@ -15,21 +15,16 @@
     <form id="form1" runat="server">
         <div>
         </div>
-    <p>
+    <p style="margin-left: 80px">
         <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         </p>
-    <p>
+    <p style="margin-left: 80px">
         <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
         </p>
-    <p>
+    <p style="margin-left: 40px">
 
-        <input id="Text1" type="text" runat="server" value="" />
-        
-        <input id="Submit1" type="submit" value="submit" />     
-        
-        <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
-        
-        <asp:Button ID="Button3" runat="server" Text="Next problem" OnClick="Button3_Click" />
+        &nbsp;
+        <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
         
         
         
@@ -37,15 +32,20 @@
 
      <p>
 
-         </p>
+        <input id="Text1" type="text" runat="server" value="" /><input id="Submit1" type="submit" value="submit" /></p>
            
     <p>
-         <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Check Answer"  />
-                <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
+         <asp:Label ID="Label5" runat="server" Text="Label">Your Answer: </asp:Label>
+         <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+        
         </p>
    
     <p>
 
+        <asp:Button ID="Button3" runat="server" Text="Next problem" OnClick="Button3_Click" />
+        
+        
+        
         </p>
         
     <p></p>

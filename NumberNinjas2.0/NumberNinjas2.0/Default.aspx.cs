@@ -21,17 +21,17 @@ namespace NumberNinjas2._0
 
         protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
         {
-
+            Response.Redirect("Subtraction.aspx");
         }
 
         protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
         {
-
+            Response.Redirect("Multiplication.aspx");
         }
 
         protected void ImageButton4_Click(object sender, ImageClickEventArgs e)
         {
-
+            Response.Redirect("Division.aspx");
         }
     }
 }

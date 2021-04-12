@@ -16,7 +16,7 @@
         <div>
         </div>
     <p style="margin-left: 80px">
-        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>       
         </p>
     <p style="margin-left: 80px">
         <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
@@ -48,10 +48,13 @@
         
         </p>
         
-    <p></p>
+    <p>
         <asp:Button ID="Button1" value="add" runat="server" OnClick="Button1_Click" Text="Back to Home" />
-    <p></p>
-    <p></p>
+    </p>
+        
+    <p>
+        
+        </p>
     </form>
-    </body>  
+    </body>     
 </html>

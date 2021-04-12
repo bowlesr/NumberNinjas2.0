@@ -214,6 +214,7 @@
     <Content Include="Account\Web.config" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Images\Add.png" />
+    <Content Include="Images\clipart1365095.png" />
     <Content Include="Images\div3.png" />
     <Content Include="Images\Mul.png" />
     <Content Include="Images\Sub.png" />
@@ -247,6 +248,8 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="StartPage.aspx" />
+    <Content Include="StartPageWithMasterPage.aspx" />
     <Content Include="Sub.aspx" />
     <Content Include="Subtraction.aspx" />
     <Content Include="ViewSwitcher.ascx" />
@@ -426,6 +429,20 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="StartPage.aspx.cs">
+      <DependentUpon>StartPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StartPage.aspx.designer.cs">
+      <DependentUpon>StartPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StartPageWithMasterPage.aspx.cs">
+      <DependentUpon>StartPageWithMasterPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StartPageWithMasterPage.aspx.designer.cs">
+      <DependentUpon>StartPageWithMasterPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
     <Compile Include="Sub.aspx.cs">

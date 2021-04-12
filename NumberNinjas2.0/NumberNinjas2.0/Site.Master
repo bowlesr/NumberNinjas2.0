@@ -15,15 +15,15 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
-<body>
+<body>   
     
     <form runat="server">
-        <%--<style>
+        <style>
             body
             {
                 background-color:aqua;
             }
-        </style>--%>
+        </style>
         <asp:ScriptManager runat="server">
             <Scripts>
                 <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>

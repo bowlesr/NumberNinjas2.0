@@ -15,7 +15,7 @@ namespace NumberNinjas2._0
         private int num1;
         private int num2;
         private string strAns ="0" ;
-
+      
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -32,6 +32,14 @@ namespace NumberNinjas2._0
 
                 Label1.Text = num1.ToString();
                 Label2.Text = num2.ToString();
+
+                
+
+                /*switch (num1)
+                {
+                    case 1:
+                        inmage1 =
+                }*/
                 
             }
 

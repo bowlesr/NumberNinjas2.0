@@ -25,7 +25,7 @@ namespace NumberNinjas2._0
                 Label1.Text = num1.ToString();
 
                 number2();
-                while (num1 == num2)
+                while (num2 == 0 && num1 == num2)
                 {
                     num2 = number2();
                     Label2.Text = num2.ToString();
@@ -48,7 +48,7 @@ namespace NumberNinjas2._0
             number1();
             Label1.Text = num1.ToString();
             number2();
-            while (num1 == num2)
+            while (num2 == 0 && num1 == num2)
             {
                 num2 = number2();
                 Label2.Text = num2.ToString();

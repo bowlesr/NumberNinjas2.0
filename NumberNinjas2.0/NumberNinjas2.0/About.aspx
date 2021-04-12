@@ -7,5 +7,6 @@
     </p>
     <p>
         Slay Numbers with your new and improved math skills
+        <%--<img src="~/Images/clipart1365095.png" alt="Ninjas">--%>
     </p>
 </asp:Content>

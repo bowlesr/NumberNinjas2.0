@@ -56,5 +56,8 @@
         
         </p>
     </form>
+    <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - Number Ninjas</p>
+            </footer>
     </body>     
 </html>

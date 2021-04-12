@@ -11,7 +11,7 @@
         }
     </style>
 </head>
-<body>
+<body style="background-color:cornflowerblue">
     <form id="form1" runat="server">
         <div>
         </div>

@@ -214,6 +214,7 @@
     <Content Include="Account\Web.config" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Images\Add.png" />
+    <Content Include="Images\clipart1365095.png" />
     <Content Include="Images\div3.png" />
     <Content Include="Images\Mul.png" />
     <Content Include="Images\Sub.png" />

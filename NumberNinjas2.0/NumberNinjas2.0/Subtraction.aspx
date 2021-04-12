@@ -11,7 +11,7 @@
         }
     </style>
 </head>
-<body>
+<body style="background-color:cornflowerblue">
     <form id="form1" runat="server">
         <div>
         </div>
@@ -53,5 +53,8 @@
     <p></p>
     <p></p>
     </form>
+    <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - Number Ninjas</p>
+            </footer>
     </body>  
 </html>

@@ -2,6 +2,10 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
+    <style>
+        body{background-color:lightcoral}
+    </style>
+
     <div class="jumbotron">
         <h1>Number Ninjas</h1>
         

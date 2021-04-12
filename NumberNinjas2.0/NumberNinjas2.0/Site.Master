@@ -45,7 +45,8 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Number Ninjas</a>
+                    <a class="navbar-brand" runat="server" href="~/"  > Number Ninjas</a>
+                    <%--<img src="~/Images/clipart1365095.png"/>--%>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">

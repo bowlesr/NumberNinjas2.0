@@ -16,7 +16,14 @@
 
 </head>
 <body>
+    
     <form runat="server">
+        <%--<style>
+            body
+            {
+                background-color:aqua;
+            }
+        </style>--%>
         <asp:ScriptManager runat="server">
             <Scripts>
                 <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
@@ -36,6 +43,7 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
+
 
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
